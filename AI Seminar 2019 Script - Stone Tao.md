@@ -11,15 +11,15 @@ This script and its contents were written by Stone Tao for the AI seminar.
 
 ## 1. Introduction / My Background
 
-My name is Stone Tao, I recently graduated from my highschool, International School of Beijing, and am studying Cognitive Science with specialization in Machine Learning at UC San Diego. I am interested in machine learining and computer science, but also love to do web development on the side and create visuals.
+My name is Stone Tao, I recently graduated from my highschool, International School of Beijing, and am studying Cognitive Science with specialization in Machine Learning at UC San Diego. I am interested in machine learning and computer science, but also love to do web development on the side and create visuals.
 
-Today, I will primarily be talking about my experience in AI competitions of the caliber and type as MIT's BattleCode and Two Sigma's Halite. I will first briefly explain some details about AI to those new to this concept. Then I will introduce the two competitions I participated in and then talk about my experiences. I will go through the competiton format and some advice I have after competing in them. I will also briefly talk about a more data science oriented AI competition, Kaggle.
+Today, I will primarily be talking about my experience in AI competitions of the caliber and type as MIT's BattleCode and Two Sigma's Halite. I will first briefly explain some details about AI to those new to this concept. Then I will introduce the two competitions I participated in and then talk about my experiences. I will go through the competiton format and givesome advice I have after competing in them. I will also briefly talk about a more data science oriented AI competition, Kaggle.
 
 First, a brief overview of my background in relation to my education and computer science.
 
 I grew up in Chicago before moving to Beijing in 2011, staying at ISB for the rest of my time there. I have always done some math, although not extensively, and I think that was my favorite subject at the time back when I was a freshman and maybe sophmore in highschool. 
 
-Both my parents were both programmers, although my mother has now moved on to pursue the arts more.
+Both my parents were programmers, although my mother has now moved on to pursue the arts more.
 
 Despite that, I actually started doing more programming and computer science a lot later into my education, gaining a lot of interest at the start of 11th grade with previous exposure being a little bit in 10th grade. I started off with a lot of HTML and JavaScript, with Java and Python as well. 
 
@@ -77,7 +77,7 @@ Often times, most of the submitted bots are rule based bots. Although not using 
 
 ##### ML
 
-There are also the machine learning based bots, although I have never heard of this being achieved in Battlecode, but it has been achieved in Halite. This is down to the fact that Battlecode is often fairly complex in terms of rules and the tight timeline makes it harder. The other major factor is that there is amount of severe data limitation, partially due to less competitors compared to Halite, and less matches being played compared to Halite as well. On the other hand, Halite satisfies all the ML enthusiasts by providing an API to download past matches, of which there is a abundance of, allowing them to sufficiently to learn from. Here, competitors will need to find how to best extract features from game data, and use good architecture to learn as best as possible and produce a good bot. The following picture is an example of the machine learning architecture used by the best machine learning bot in this competition. For those interested, I will provide a link to a full writeup by the guy who built this machine learning bot and created this model.
+There are also the machine learning based bots, although I have never heard of this being achieved in Battlecode, but it has been achieved in Halite. This is down to the fact that Battlecode is often fairly complex in terms of rules and the tight timeline makes it harder. The other major factor is that there is a severe amount of data limitation, partially due to less competitors compared to Halite, and less matches being played compared to Halite as well. On the other hand, Halite satisfies all the ML enthusiasts by providing an API to download past matches, of which there is a abundance of, allowing them to sufficiently to learn from. Here, competitors will need to find how to best extract features from game data, and use good architecture to learn as best as possible and produce a good bot. The following picture is an example of the machine learning architecture used by the best machine learning bot in this competition. For those interested, I will provide a link to a full writeup by the guy who built this machine learning bot and created this model.
 
 ![halite3-architecture-2](assets/halite3-architecture-2.png)
 
@@ -87,7 +87,7 @@ In a similar way, although rule based bots don't necessarly learn by themselves,
 
 #### 3.1.3 How do I get started?
 
-Really, in my opinion to get a start, you just need to have logic and time and enthusiasm. With time and enthusaism, you don't even need to know the programming language, you will be able to learn the fundamentals quickly and get a start right away. Additionally, without those, its hard to spend time on these competitons and try to learn and get results out. These competitons aren't like USACO, or any of those math olympiad competitions like AMC, AIME, USAMO. A clear difference is that these AI competitions give you a long time frame up to months to work on the bot and submit it, whereas in the other competitions like USACO, you are given a few hours to solve some problems. This is more similar to the USAMTS, USA Mathematical Talent Search, competition, which also gives you about a month to solve 5 problems each round out of 3 rounds total. Additionally, you never know what kind of competition it will be like next time, the rules always change and the format also always changes.
+Really, in my opinion to get a start, you just need to have logic and time and enthusiasm. With time and enthusiasm, you don't even need to know the programming language, you will be able to learn the fundamentals quickly and get a start right away. Additionally, without those, its hard to spend time on these competitons and try to learn and get results out. These competitons aren't like USACO, or any of those math olympiad competitions like AMC, AIME, USAMO. A clear difference is that these AI competitions give you a long time frame up to months to work on the bot and submit it, whereas in the other competitions like USACO, you are given a few hours to solve some problems. This is more similar to the USAMTS, USA Mathematical Talent Search, competition, which also gives you about a month to solve 5 problems each round out of 3 rounds total. Additionally, you never know what kind of competition it will be like next time, the rules always change and the format also always changes.
 
 That's just evidence that a lot more work is needed for competing in AI competitions, and you need to be ready to persevere through some grueling weeks if you try and aim for the top. 
 
@@ -107,11 +107,11 @@ The first one I will talk about is MIT's Battlecode, which is what MIT, or at le
 
 #### 3.2.1 What's the game?
 
-Generally, the game often revolves with a 2 player game, where the objective is to destory the enemy's base of some sort. In particular this year, the objective was to destroy all the enemy's castles in a religious themed game on a 2D square grid. You are given resources to help build an army and units to help mine more resources and defend your own castles and destroy the enemy's. In particular for this years Battlecode, teams wrote code that every unit runs, regardless of what kind of unit they are, it was up to the teams to organize their code to handle each case and have decision making for each unit. If two teams had the same number of castles remaining, they determined the winner by who had the most cumulative unit health, and then by a coin flip. The above image is a game between my team and team Dogma, and we employed several strategies here to get to this point and pretty much win that match.
+Generally, the game often revolves with a 2 player game, where the objective is to destory the enemy's base of some sort. In particular this year, the objective was to destroy all the enemy's castles in a religious themed game on a 2D square grid. You are given resources to help build an army and units to help mine more resources and defend your own castles and destroy the enemy's. In particular for this years Battlecode, teams wrote code that every unit runs, regardless of what kind of unit they are, it was up to the teams to organize their code to handle each case and have decision making for each unit. If two teams had the same number of castles remaining, they determined the winner by who had the most cumulative unit health, and then by a coin flip. The above image is a game between my team and team Dogma, and we employed several strategies here to get to this point and pretty much win that match. We are team blue, and we pretty much gained resource control early on to then produce a lot of units and smother the enemy.
 
 #### 3.2.2 How do you compete?
 
-You first signup for the competiton through their website, battlecode.org. After signing up, you will be given the relevant files and docuemntation to start.
+You first signup for the competiton through their website, battlecode.org. After signing up, you will be given the relevant files and documentation to start.
 
 Players compete in double elimination tournaments. Each team playing to a best of 3 matches against their competitor. Battlecode always has several tournaments, a sprint, seeding, qualifying, and finals tournaments. Sprint occurs 7 days after the game specs are released, meaning everyone has 7 days to program a bot for that competition. There's usually a small cash reward to winners. Seeding determines player seeding for qualifying. And usually, the top 16 in qualifiying advance to the finals, regardless of nationality, which was the case this year, although in some years they put a cap on the number of international and US qualifying teams that can advance to finals. US meaning the entire team is composed of us citizens. It's also important to note that MIT battlecode is open to any participant. However, only people who are full time students may compete in seeding, qualifying, and finals.
 
@@ -123,21 +123,21 @@ Competitors in Battlecode, especially the top guys who make finals or were near 
 
 ![battlecode19api](assets/battlecode19api.png)
 
-In order to build the AI or bot to take part in the match and try to win, you have to use the API, standing for Application Programming Interface, for your language of choice. For security reasons, Battlecode doesn't let you directly manipulate the game going on or else you can cheat. Instead, you make your decisions by running prebuilt functions such as typing move and in parentheses, the x and y coordinate of a valid destination, or typing attack and giving a valid attack location as input. Additionally, you need to program efficient code as unit you control is given a limited amount of time before it will freeze. Each turn in battlecode, every unit receives 20ms of computation time in addition to their starting 100ms. If the computation time used is over how much the unit has, then the unit freezes until it gathers enough time to run again.
+In order to build the AI or bot to take part in the match and try to win, you have to use the API, standing for Application Programming Interface, for your language of choice. For security reasons, Battlecode doesn't let you directly manipulate the game going on or else you can cheat. Instead, you make your decisions by running prebuilt functions such as typing move and in parentheses, the x and y coordinate of a valid destination, or typing attack and giving a valid attack location as input. Additionally, you need to program efficient code as each unit you control is given a limited amount of time before it will freeze. Each turn in battlecode, every unit receives 20ms of computation time in addition to their starting 100ms. If the computation time used is over how much the unit has, then the unit freezes until it gathers enough time to run again.
 
 #### 3.2.4 Additional Features / Notable Elements of Battlecode
 
 ##### Community
 
-A part of the culture in this competition, there is a competitors Discord channel, a place where everyone can talk freely about what they want, but primarily about Battlecode. People sometimes share their strategies, but obviously the best ones people will keep it secret. The community in my experience was always great, people are supportive and willing to help with a lot of things from programming to talking about the game. You also have direct access to the developers of Battlecode, who are usually undergraduate students at MIT.
+A part of the culture in this competition, there is a competitors Discord channel, a place where everyone can talk freely about what they want, but primarily about Battlecode. People sometimes share their strategies, but obviously the best ones people will keep it secret. The community in my experience was always great, people are supportive and willing to help with a lot of things from programming to talking about the game. You also have direct access to the developers of Battlecode, who are usually undergraduate students at MIT. Additionally, the devs of Battlecode also provide online video tutorials to help you get started in Battlecode, teaching the basics of competing in Battlecode and intoducing some rudimentary pathing algorithms and more.
 
-For those who make the finals, you get a completely reimbursed trip to MIT in Boston to watch your bot compete live. Additionally, there's a finalist dinner planned, along with many companies that come to watch and host a mini fair to advertise their company to contestants. This year, sponsors included the likes of Oracle, De Shaw and Co, Jabil, HRT, IBM, Disney, and more, primairly companies with a strong need for programmers, whether its for software engineering, data science etc. However, note that these companies supposedly rarely talk to you, especially if your a freshman in college or younger and are in HS. It's practically up to you to actively talk to them, and although very rare, try to land an internship opportunity.
+For those who make the finals, you get a completely reimbursed trip to MIT in Boston to watch your bot compete live. Additionally, there's a finalist dinner planned, along with many companies that come to watch and host a mini fair to advertise their company to contestants. This year, sponsors included the likes of Oracle, De Shaw and Co, Jabil, HRT, IBM, Disney, and more, primarily companies with a strong need for programmers, whether its for software engineering, data science etc. However, note that these companies supposedly rarely talk to you, especially if your a freshman in college or younger and are in HS. It's practically up to you to actively talk to them, and although very rare, try to land an internship opportunity.
 
 All who make finals are also in the money, and will earn a cash prize, with quantity dependent on their final ranking in the top 16. There's a prize pool total of 50k usd, and I believe first place won 8k. We won a total of $1750 in comparison, 1250 for getting 9th overall, and 500 for 4th overall as highschool team.
 
 ##### Time Constraints
 
-[Image of me lowkey celebrating in Battlecode finals]
+![ORG_DSC03274](assets/ORG_DSC03274.JPG)
 
 Now, to help capture the 气氛, the atmosphere of Battlecode, this is a picture of me celebrating out of surprise and excitement after we won our first match out of the strangest of circumstances, meaning bugs that turned out to be features because they accidentally helped us win. Battlecode is a competiton that gives you just 23 days to write a bot in time for the finals, 19 days for the qualifiers that determine who gets to compete at finals, 21 days if you are in a school in the US. 19 days may sound like a lot, but it's actually very little considering that almost all competitors, and all those who are eligible to fight for a finalists spot, are students in highschool or university. 
 
@@ -279,7 +279,7 @@ Using some form of git control is very helpful. If you aren't familiar with the 
 
 ### 4.1 Kaggle
 
-![th](assets/th.jpg)
+![th](assets/kaggle.jpg)
 
 Kaggle is essentially an online community, group of data scientists, interested in getting meaining out of data. It is currently owned by Google. As I said before, having data is crucial to any kind of AI, whether its machine learning, or a rule based bot for halite or battlecode, you need data to work with. Kaggle allows people to find and publish their own datasets for various things from stock market data, Australia's 2019 election tweets, to an artificial lunar landscape dataset. You can use these datasets to make your own predictions and essentially learn more about the world and AI!
 
@@ -317,6 +317,8 @@ Saying this, I also don't discourage parents from pushing their sons and daughte
 
 Ok that's it, I will be sending out resources right now. I will also send them again at the end of the seminar after the questions so you guys don't need to scroll all the way to the middle to find it.
 
+I would like to first thank you guys for listening. I also want to give a special thanks to all my friends and family for supporting me and my teammates at battlecode for helping us get there.
+
 I am now opening the seminar to questions and will also answer some of the questiosn submitted beforehand.
 
 ## Links and Resources Sent at end of seminar:
@@ -324,6 +326,7 @@ I am now opening the seminar to questions and will also answer some of the quest
 #### Final Notes, Links, Resources:
 
 Full script and the following resources can be downloaded here / 完整脚本以及以下的资源可以在这里下载: 
+https://github.com/StoneT2000/AI-Seminar-Script-and-Resources
 
 Battlecode (Around January - February):
 Link: http://battlecode.org/
@@ -351,8 +354,6 @@ Writeup of Machine Learning bot in Halite: https://stakernotes.com/diamond-ranke
 Some good Battlecode Post Mortems from this year's competition:
 http://jerrymao.net/blog/battlecode/
 http://battlecode.org/oak-postmortem.pdf
-
-
 
 ------
 
